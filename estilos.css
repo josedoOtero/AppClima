@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #357cff, rgba(243, 214, 83, 0.66));
+    background-size: 300% 300%;
+    animation: gradienteAnimado 15s ease infinite;
+}
+
+.contenedor-principal{
+    backdrop-filter: blur(70px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-custom1{
+    background-color: rgba(255, 254, 254, 0.81);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-custom1:hover{
+    background-color: rgba(195, 188, 188, 0.81);
+    transform: scale(1.1);
+}
+
+@keyframes gradienteAnimado {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+#dias{
+    cursor: pointer;
+}
+
+.dias_elem:hover{
+    transform: scale(1.1);
+}

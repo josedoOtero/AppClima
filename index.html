@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <title>AppClima</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container border rounded p-5 mt-5 justify-content-center align-items-center text-center shadow-lg">
+<body class="">
+    <div class="contenedor-principal container border rounded p-5 mt-5 justify-content-center align-items-center text-center shadow-lg">
         <h3>De donde te gustaria saber el tiempo: </h3>
 
-        <form>
-            <input type="text" id="ciudad">
-            <input type="submit" value="Ver Tiempo" placeholder="Ingresa tu ciudad" spellcheck="false">
+        <form class="d-flex gap-2" id="formularioTiempo">
+            <input type="text" name="ciudad" id="ciudad" class="form-control m-1" placeholder="Ingresa tu ciudad" spellcheck="false">
+            <input type="submit" value="Ver Tiempo" class="btn btn-custom1 m-1">
         </form>
+    </div>
+
+    <div id="dias" class=" col-8 align-content-center m-auto row mt-5 justify-content-center align-items-center text-center d-none">
+
+    </div>
+
+    <div id="clima" class="contenedor-principal col-8 align-content-center m-auto container border rounded p-5 mt-5 justify-content-center align-items-center text-center shadow-lg d-none">
+
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
