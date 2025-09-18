@@ -35,9 +35,18 @@ body {
 }
 
 #dias{
+    transition: 3s ease;
     cursor: pointer;
 }
 
 .dias_elem:hover{
     transform: scale(1.1);
+}
+
+.selecionado{
+    background-color: rgba(166, 162, 162, 0.47);
+}
+
+.tabla-clima{
+    background-color: rgba(255, 255, 255, 0.32);
 }
